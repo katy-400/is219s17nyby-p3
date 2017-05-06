@@ -95,17 +95,12 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
   ];
 	
-	
-
-	
+		
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
-	
-	
-	
-	
-	
-	
+	$scope.title = 'IMDB + Katy’s Top 8 Movies';
+	$scope.owner = 'Katy Nyby';
+	$scope.github = 'https://github.com/katy-400/is219s17nyby-p3';
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
 		
