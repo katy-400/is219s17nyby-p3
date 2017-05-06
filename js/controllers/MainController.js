@@ -1,4 +1,4 @@
-app.controller('HomeController', ['$scope', function($scope) {
+app.controller('MainController', ['$scope', function($scope) {
 	$scope.title = 'IMDB + Katy’s Top 8 Movies';
 	$scope.owner = 'Katy Nyby';
 	$scope.github = 'https://github.com/katy-400/is219s17nyby-p3';
@@ -104,36 +104,7 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	765,
       dislikes:	121,
       posterindex: 0
-	},
-	{ 
-      title:	'The Princess Bride', 
-      iscore:	8.1,
-      rating:	'PG',
-      runtime:	98,
-      released:	new Date('1987', '10', '09'),
-      country:	'USA',
-      posters:	['img/princessbride1.jpg','img/princessbride2.jpg','img/princessbride3.jpg'],
-      imdb:		'http://www.imdb.com/title/tt0093779/',
-      website:	'http://princessbrideforever.com/',
-      likes:	999,
-      dislikes:	234,
-      posterindex: 0
-	},
-	{ 
-      title:	'Bo Burnham: what', 
-      iscore:	8.5,
-      rating:	'TV-MA',
-      runtime:	98,
-      released:	new Date('2013', '12', '18'),
-      country:	'USA',
-      posters:	['img/boburnham1.jpg', 'img/boburnham2.jpg'],
-      imdb:		'http://www.imdb.com/title/tt3210258/',
-      website:	'https://www.facebook.com/Bo-Burnham-10947828617/',
-      likes:	696,
-      dislikes:	179,
-      posterindex: 0
 	}
-	
 	
 	
   ];
