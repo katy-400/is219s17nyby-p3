@@ -95,7 +95,6 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
   ];
 	
-		
 	/* ADD VARIABLES FOR STEP 3 HERE */
 	
 	$scope.title = 'IMDB + Katy’s Top 8 Movies';
@@ -126,11 +125,5 @@ app.controller('HomeController', ['$scope', function($scope) {
 		console.log(hours + "h " + mins + "m ");
 		return total;
 	}
-	
-	
-	
-	
-	
-	
-	
+		
 }]);

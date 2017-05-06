@@ -21,7 +21,7 @@
 	
 </head>
 
-  <body ng-app="IS219Gallery" ng-controller = "MainController">
+  <body ng-app="IS219Gallery" ng-controller = "HomeController">
 	  
     <div class="header">
 	    
@@ -31,11 +31,10 @@
       
     </div>
 
-    <div  class="main">
-      <!--ng-repeat="Many Movies"-->
+    <div class="main">
       <div class="container">
 
-        <div class="col-md-6"> 
+        <div ng-repeat="movie in movies" class="col-md-6"> 
             <div class="thumbnail">
 
 					<img class="poster" ng-click = "posterClick($index)" src = "{{movie.posters[movie.posterindex]}}"/>
@@ -43,9 +42,9 @@
 					
 					<p class="title">{{movie.title}} ({{movie.country}})</p> 
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore}} </p>
-					<p class="runtime">Runtime: {{movie.runtime}}</p> 
+					<p class="runtime">Runtime: {{timeText(movie.runtime)}}</p> 
 					<p class="released">Released: {{movie.released | date}} | Rated: {{movie.rating}}</p>
-					<p class="websites">Websites: <a href = "{{movie.imbd}}">IMBD</a> | <a href = "{{movie.website}}">Movie Website</a></p>
+					<p class="websites">Websites: <a href = "{{movie.imdb}}">IMBD</a> | <a href = "{{movie.website}}">Movie Website</a></p>
 					
 		            <div class="social">
 		              <p class="likes" ng-click = "like($index)"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{movie.likes}}</p>
