@@ -113,9 +113,9 @@ app.controller('HomeController', ['$scope', function($scope) {
 	};
 	
 	$scope.posterClick = function(Number){
-		$scope.movies[index].posterIndex +=1;
-		if ($scope.movies[index].posterIndex >= $scope.movies[index].posters.length){
-			$scope.movies[index].posterIndex =0;
+		$scope.movies[index].posterindex +=1;
+		if ($scope.movies[index].posterindex >= $scope.movies[index].posters.length){
+			$scope.movies[index].posterindex =0;
 		}
 	};
 	
