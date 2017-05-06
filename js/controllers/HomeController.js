@@ -1,5 +1,7 @@
 app.controller('HomeController', ['$scope', function($scope) {
-	
+	$scope.title = 'IMDB + Katy’s Top 8 Movies';
+	$scope.owner = 'Katy Nyby';
+	$scope.github = 'https://github.com/katy-400/is219s17nyby-p3';
 	
 	/* THESE ARE YOUR LIST OF MOVIES AND ACCOMPANYING METADATA
 	//	
